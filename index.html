@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>That's the Color</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Montserrat|Rochester" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+        integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <!-- Librairie jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Librairie VueJS -->
+    <script src="vue.js"></script>
+</head>
+<body>
+<header>
+<h1 class="container"><span id="colorTitle1">Th</span><span id="colorTitle2">at</span><span id="colorTitle3">'s</span> <span id="colorTitle4">TH</span><span id="colorTitle5">E</span> <span id="colorTitle6">Co</span><span id="colorTitle7">lor</span></h1>
+</header>
+<main id="app">
+    <div class="backgrnd">
+    <div class="container">
+    <form>
+    <fieldset>
+        <legend>Pick a color</legend>
+    <!-- <legend><span id="colorPick1">Pick</span> <span id="colorPick2">a</span> <span id="colorPick3">color</span></legend> -->
+    <input type="color" name="color" id="" v-model="color" :style={background:color}>
+   
+    </fieldset>
+    <button @click.prevent="addcolor"><span id="colorBtn1">Va</span><span id="colorBtn2">li</span><span id="colorBtn3">der</span></button>
+    </form> 
+    <div class="container">
+    <p v-if="color">That's <span :style={color:color}>THE</span> color : <span>{{color}}</span> <span class="colorender" :style={background:color}></span></p>
+    
+    
+    <ul>
+        <li v-if="success==true">Latest searches</li>
+    <li v-for="last in lastcolor" :style={background:last}>{{last}}</li>
+    </ul>
+   
+   
+    </div>  
+    </div>
+    </div>
+</main>
+<footer>
+        <p>Made with <i class="fas fa-heart"></i> by Olivia Coffineau - 2019</p>
+    </footer>
+    <script src="app.js"></script> 
+</body>
+
+</html>

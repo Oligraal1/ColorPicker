@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="grid-"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@for $i from 2 through 12 {
+    .grid-#{$i}>* {
+        width: 100% /$i;
+    }
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*********COLOR*********************/
+$color-text:#1f2124;
+$color-h1:rgb(117, 105, 105);
+$color-title:#cbd7e9;
+$color-frame:rgb(71, 79, 87);
+$color-nav:rgb(97, 79, 79);
+$color-bg:#6f1d42;
+$color-black:#000000;
+$color-heart:rgb(192, 18, 47);
+$colorTitle1:#5265c0;
+$colorTitle2:#52b1c0;
+$colorTitle3:#52c06f;
+$colorTitle4:#8fc052;
+$colorTitle5:#c0b652;
+$colorTitle6:#c06952;
+$colorTitle7:#c0526d;
+$colorBtn1:#ac2260;
+$colorBtn2:#b34e7c;
+$colorBtn3:#ec6ba5;
+
+/*******************FONT*************/
+@mixin font() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font-title() {
+    font-family: 'Rochester', cursive;
+}
+
+@mixin font-nav() {
+    font-family: 'Averia Sans Libre', cursive;
+}
+
+body {
+    background-color: $color-black;
+
+    header {
+
+        margin: 0 0 50x;
+
+        h1 {
+            text-align: center;
+            @include font-nav();
+            font-size: 5rem;
+
+            #colorTitle1 {
+                color: $colorTitle1;
+            }
+
+            #colorTitle2 {
+                color: $colorTitle2;
+            }
+
+            #colorTitle3 {
+                color: $colorTitle3;
+            }
+
+            #colorTitle4 {
+                color: $colorTitle4;
+            }
+
+            #colorTitle5 {
+                color: $colorTitle5;
+            }
+
+            #colorTitle6 {
+                color: $colorTitle6;
+            }
+
+            #colorTitle7 {
+                color: $colorTitle7;
+            }
+        }
+    }
+
+    main {
+        background-image: url(images/wall.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+        padding: 0 0 250px;
+
+        .backgrnd {
+            background-color: $color-black;
+            padding: 100px 0 150px;
+
+            form {
+               // margin: 50px 25% 150px 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                fieldset {
+                    
+                    border-radius:20px;
+                    padding:25px 100px;
+                    legend {
+                        padding: 0 15px;
+                        @include font-nav();
+                        text-align: center;
+                        font-size: 1.5rem;
+                        color:$color-title;
+                        #colorPick1 {
+                            color: $colorTitle2;
+                        }
+
+                        #colorPick2 {
+                            color: $colorTitle7;
+                        }
+
+                        #colorPick3 {
+                            color: $colorTitle4;
+                        }
+                    }
+
+                    input {
+                       margin: 0 50px;
+                        background-color: $color-bg;
+                        padding: 25px 50px;
+                        
+                    }
+                }
+            }
+
+            p {
+                //margin: 20px 0 50px;
+               // padding: 75px 0 50px;
+                @include font-nav();
+                font-size: 2rem;
+                text-align: center;
+                color: $color-title;
+
+                .colorender {
+                    margin: 0 20px;
+                    padding: 20px 40px;
+                    //  border: 1px solid $color-frame;
+                    border-radius: 50%;
+                }
+            }
+            h2 {
+                @include font-nav();
+                color:$color-title;
+                text-align: center;
+            }
+            ul {
+                margin: 50px 0 0;
+                li {
+                    @include font-nav();
+                    color:$color-title;
+                    text-align: center;
+                    list-style: none;
+                   padding:20px 0;
+                }
+                li:first-of-type {
+                    font-size:1.4rem;
+                    margin-bottom:25px;
+                }
+            }
+            button {
+                margin: 20px;
+                padding:10px 5px;
+                border-radius:10px;
+                @include font-nav();                
+                text-align: center;
+                background-color: $color-black;
+                border:solid 1px $color-title;
+                font-size:1.2rem;
+                #colorBtn1 {
+                    color:$colorBtn3;
+                }
+                #colorBtn2 {
+                    color:$colorBtn2;
+                }
+                #colorBtn3 {
+                    color:$colorBtn1;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 25px 0 0;
+
+        p {
+            @include font-nav();
+            color: $color-title;
+            font-size: 0.7rem;
+            text-align: center;
+
+            i {
+                color: $color-heart;
+            }
+        }
+    }
+}

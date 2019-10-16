@@ -1,0 +1,244 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="grid-"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid-2 > * {
+  width: 50%;
+}
+
+.grid-3 > * {
+  width: 33.33333%;
+}
+
+.grid-4 > * {
+  width: 25%;
+}
+
+.grid-5 > * {
+  width: 20%;
+}
+
+.grid-6 > * {
+  width: 16.66667%;
+}
+
+.grid-7 > * {
+  width: 14.28571%;
+}
+
+.grid-8 > * {
+  width: 12.5%;
+}
+
+.grid-9 > * {
+  width: 11.11111%;
+}
+
+.grid-10 > * {
+  width: 10%;
+}
+
+.grid-11 > * {
+  width: 9.09091%;
+}
+
+.grid-12 > * {
+  width: 8.33333%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*********COLOR*********************/
+/*******************FONT*************/
+body {
+  background-color: #000000;
+}
+
+body header {
+  margin: 0 0 50x;
+}
+
+body header h1 {
+  text-align: center;
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 5rem;
+}
+
+body header h1 #colorTitle1 {
+  color: #5265c0;
+}
+
+body header h1 #colorTitle2 {
+  color: #52b1c0;
+}
+
+body header h1 #colorTitle3 {
+  color: #52c06f;
+}
+
+body header h1 #colorTitle4 {
+  color: #8fc052;
+}
+
+body header h1 #colorTitle5 {
+  color: #c0b652;
+}
+
+body header h1 #colorTitle6 {
+  color: #c06952;
+}
+
+body header h1 #colorTitle7 {
+  color: #c0526d;
+}
+
+body main {
+  background-image: url(images/wall.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  padding: 0 0 250px;
+}
+
+body main .backgrnd {
+  background-color: #000000;
+  padding: 100px 0 150px;
+}
+
+body main .backgrnd form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .backgrnd form fieldset {
+  border-radius: 20px;
+  padding: 25px 100px;
+}
+
+body main .backgrnd form fieldset legend {
+  padding: 0 15px;
+  font-family: 'Averia Sans Libre', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #cbd7e9;
+}
+
+body main .backgrnd form fieldset legend #colorPick1 {
+  color: #52b1c0;
+}
+
+body main .backgrnd form fieldset legend #colorPick2 {
+  color: #c0526d;
+}
+
+body main .backgrnd form fieldset legend #colorPick3 {
+  color: #8fc052;
+}
+
+body main .backgrnd form fieldset input {
+  margin: 0 50px;
+  background-color: #6f1d42;
+  padding: 25px 50px;
+}
+
+body main .backgrnd p {
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #cbd7e9;
+}
+
+body main .backgrnd p .colorender {
+  margin: 0 20px;
+  padding: 20px 40px;
+  border-radius: 50%;
+}
+
+body main .backgrnd h2 {
+  font-family: 'Averia Sans Libre', cursive;
+  color: #cbd7e9;
+  text-align: center;
+}
+
+body main .backgrnd ul {
+  margin: 50px 0 0;
+}
+
+body main .backgrnd ul li {
+  font-family: 'Averia Sans Libre', cursive;
+  color: #cbd7e9;
+  text-align: center;
+  list-style: none;
+  padding: 20px 0;
+}
+
+body main .backgrnd ul li:first-of-type {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+body main .backgrnd button {
+  margin: 20px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-family: 'Averia Sans Libre', cursive;
+  text-align: center;
+  background-color: #000000;
+  border: solid 1px #cbd7e9;
+  font-size: 1.2rem;
+}
+
+body main .backgrnd button #colorBtn1 {
+  color: #ec6ba5;
+}
+
+body main .backgrnd button #colorBtn2 {
+  color: #b34e7c;
+}
+
+body main .backgrnd button #colorBtn3 {
+  color: #ac2260;
+}
+
+body footer {
+  margin: 25px 0 0;
+}
+
+body footer p {
+  font-family: 'Averia Sans Libre', cursive;
+  color: #cbd7e9;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+body footer p i {
+  color: #c0122f;
+}
+/*# sourceMappingURL=main.css.map */
